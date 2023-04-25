@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@color/grey_light">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingLeft="@dimen/dimen_20"
+        android:paddingRight="@dimen/dimen_20">
+
+        <TextView
+            android:id="@+id/kk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/dimen_70"
+            android:text="@string/header_kodeKeluarga"
+            android:textSize="@dimen/text_size_24"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/keterangan_kk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/kk"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_15"
+            android:text="@string/ketikan_KK"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:id="@+id/masukan_kode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/keterangan_kk"
+            android:layout_marginTop="@dimen/dimen_20"
+            app:boxCornerRadiusTopStart="@dimen/dimen_30"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_30"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_30"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_30"
+            app:boxStrokeWidth="@dimen/dimen_2"
+            app:boxStrokeColor="@color/black"
+            android:backgroundTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMasukanKode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Kode"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/setuju"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/dimen_20"
+            app:layout_constraintTop_toBottomOf="@+id/masukan_kode"
+            android:text="Dengan menekan tombol masuk berarti anda menyetujui"
+            android:textSize="@dimen/text_size_13"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:id="@+id/setuju2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setuju"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ketentuan Pengguna "
+                android:textSize="@dimen/text_size_13"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dan "
+                android:textSize="@dimen/text_size_13"
+                android:textAlignment="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kebijakan Data "
+                android:textSize="@dimen/text_size_13"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kami"
+                android:textSize="@dimen/text_size_13"
+                android:textAlignment="center"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMasuk"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/setuju2"
+            android:text="Masuk"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/yellow"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/beli_kode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:text="@string/belum_punya_kode"
+            android:textSize="@dimen/text_size_18"
+            android:textAlignment="center"/>
+
+        <Button
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/beli_kode"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_100"
+            android:layout_marginBottom="@dimen/dimen_40"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple_500"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

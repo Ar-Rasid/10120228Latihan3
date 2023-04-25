@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">10120228Latihan3</string>
+    <string name="text_welcome">Monitory Membantu Anda Mengontrol Hp Anak</string>
+    <string name="mulai">Mulai</string>
+    <string name="header_kodeKeluarga">Kode Keluarga</string>
+    <string name="ketikan_KK">Ketikan kode keluarga yang Ayah Bunda miliki disini</string>
+    <string name="belum_punya_kode">Belum punya kode keluarga?</string>
+    <string name="beli_kode">Beli Kode Keluarga Disini</string>
+    <string name="contoh_panggilan">Contoh : Budi</string>
+    <string name="contoh_umur">Contoh : 12</string>
+    <string name="selanjutnya">Selanjutnya</string>
+    <string name="h_nama">Nama Panggilan Kamu</string>
+    <string name="h_umur">Umur Kamu</string>
+    <string name="oke">Oke</string>
+</resources>
